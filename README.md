@@ -1,16 +1,17 @@
+
 # Lab 02: SQLite Database and CRUD Routes
 
 ## Student Details
 
 - **Name:** Sai Rashmitha
-- **Registration Number:** Add your registration number
+- **Registration Number:** 252U1R9056
 - **GitHub Username:** Rashmitha1525
 - **Section:** CSE (Gen-AI) 2A
 - **Course:** Backend Development Fundamentals
 
 ## Objective
 
-To connect an Express.js server with an SQLite database and implement CRUD operations using HTTP methods.
+To develop a REST API using Node.js, Express.js, and SQLite database. The API performs CRUD (Create, Read, Update, Delete) operations on book records.
 
 ## Technologies Used
 
@@ -19,19 +20,20 @@ To connect an Express.js server with an SQLite database and implement CRUD opera
 - SQLite
 - JavaScript
 - Postman
+- Git and GitHub
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/Rashmitha1525/Lab-02.git
+git clone https://github.com/Rashmitha1525/Lab---02.git
 ```
 
-Navigate to the project folder:
+Move into the project folder:
 
 ```bash
-cd Lab-02
+cd Lab---02
 ```
 
 Install dependencies:
@@ -40,9 +42,15 @@ Install dependencies:
 npm install
 ```
 
-## Run the Project
+## Running the Application
 
-Start the development server:
+Start the server:
+
+```bash
+npm start
+```
+
+For development:
 
 ```bash
 npm run dev
@@ -50,30 +58,32 @@ npm run dev
 
 Server URL:
 
+```text
 http://localhost:3000/
+```
 
-## Database
+## Database Details
 
-**Database Name:** database.db
+Database Name: SQLite
 
-**Table Name:** book
+Table Name: book
 
-**Columns:**
+Fields:
 - id
 - title
 - author
 - price
 - pages
 
-## API Endpoints
+## CRUD Operations
 
 | Method | Endpoint | Description |
 |---|---|---|
 | GET | /books/ | Get all books |
-| GET | /books/:bookId/ | Get a particular book |
+| GET | /books/:id | Get a single book |
 | POST | /books/ | Add a new book |
-| PUT | /books/:bookId/ | Update a book |
-| DELETE | /books/:bookId/ | Delete a book |
+| PUT | /books/:id | Update a book |
+| DELETE | /books/:id | Delete a book |
 
 ## Screenshots
 
@@ -92,23 +102,14 @@ http://localhost:3000/
 ### Delete Book
 ![Delete Book](delete-book.png)
 
-## Security
+## Problems Faced
 
-- Parameterized SQL queries are used.
-- User input is validated.
-- Sensitive environment files are excluded from GitHub.
-
-## Problems Faced and Solutions
-
-1. Database connection was established using the SQLite package.
-2. CRUD operations were implemented using async/await.
-3. SQL placeholders were used to prevent SQL injection.
+- Setting up the SQLite database.
+- Connecting the database with Express.js.
+- Implementing CRUD operations.
+- Testing API endpoints using Postman.
+- Resolving Git merge conflicts while uploading the project.
 
 ## Conclusion
 
-Successfully connected an Express.js server to an SQLite database and implemented five CRUD API endpoints to create, read, update and delete book records.
-
----
-
-**Submitted by:** Sai Rashmitha  
-**GitHub:** https://github.com/Rashmitha1525
+Successfully developed a Book Management REST API using Node.js, Express.js, and SQLite. Implemented all CRUD operations and tested the endpoints using Postman. Learned database connectivity, API development, and GitHub version control.
