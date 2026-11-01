@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:3000/books/
+description: ""
+url: http://localhost:3000/books/
+method: POST
+body:
+  type: file
+  content:
+    src: ""
+order: 1000
